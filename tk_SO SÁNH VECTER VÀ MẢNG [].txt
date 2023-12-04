@@ -1,0 +1,25 @@
+Bạn muốn biết khi nào dùng vector và khi nào dùng mảng trong C++? Đây là một câu hỏi khá hay, vì vector và mảng đều là các cấu trúc dữ liệu dùng để lưu trữ các phần tử liên tiếp trong bộ nhớ. Tuy nhiên, vector và mảng cũng có những ưu và nhược điểm riêng, và bạn nên chọn cấu trúc dữ liệu phù hợp với nhu cầu và mục đích của bạn. Dưới đây là một số điểm cần lưu ý khi so sánh vector và mảng trong C++:
+
+- Vector là một lớp có sẵn trong thư viện chuẩn của C++, còn mảng là một kiểu dữ liệu cơ bản của C++.
+- Vector là một mảng động, có khả năng tự động thay đổi kích thước khi một phần tử được chèn hoặc xóa, còn mảng là một mảng tĩnh, có kích thước cố định khi khai báo và không thể thay đổi sau đó.
+- Vector có nhiều phương thức và hàm hỗ trợ để thao tác với các phần tử, còn mảng thì không có sẵn các phương thức và hàm này, bạn phải tự viết hoặc sử dụng các hàm trong thư viện khác.
+- Vector có thể lưu trữ các đối tượng của các lớp khác, còn mảng thì chỉ có thể lưu trữ các kiểu dữ liệu cơ bản hoặc cấu trúc.
+- Vector có thể sử dụng các iterator để duyệt qua các phần tử, còn mảng thì chỉ có thể sử dụng các chỉ số hoặc con trỏ.
+- Vector có thể sử dụng các thuật toán trong STL để sắp xếp, tìm kiếm, thay thế, v.v. các phần tử, còn mảng thì phải tự viết hoặc sử dụng các hàm trong thư viện khác.
+- Vector có thể sử dụng toán tử gán (=) để sao chép toàn bộ vector sang một vector khác, còn mảng thì không thể làm được điều này, bạn phải sao chép từng phần tử một hoặc sử dụng hàm memcpy.
+- Vector có thể sử dụng toán tử so sánh (==, !=, <, >, <=, >=) để so sánh toàn bộ vector với một vector khác, còn mảng thì không thể làm được điều này, bạn phải so sánh từng phần tử một hoặc sử dụng hàm memcmp.
+
+Từ những điểm trên, bạn có thể thấy rằng vector có nhiều ưu điểm hơn mảng, như tính linh hoạt, tiện lợi, dễ sử dụng và bảo trì. Tuy nhiên, vector cũng có một số nhược điểm, như:
+
+- Vector cần phải khai báo thư viện #include <vector> để sử dụng, còn mảng thì không cần.
+- Vector có thể gây ra sự lãng phí bộ nhớ khi nó tự động cấp phát nhiều bộ nhớ hơn số lượng phần tử thực tế, còn mảng thì chỉ cấp phát bộ nhớ đúng bằng kích thước khai báo.
+- Vector có thể gây ra sự chậm trễ khi nó tự động thay đổi kích thước, vì nó phải sao chép toàn bộ các phần tử sang một vùng nhớ mới, còn mảng thì không có vấn đề này.
+- Vector có thể gây ra sự phức tạp khi nó lưu trữ các đối tượng của các lớp khác, vì nó phải gọi các hàm khởi tạo, sao chép, hủy, v.v. của các đối tượng này, còn mảng thì không có vấn đề này.
+
+Vì vậy, bạn nên dùng vector khi bạn cần một cấu trúc dữ liệu linh hoạt, dễ sử dụng và có nhiều tính năng hỗ trợ. Bạn nên dùng mảng khi bạn cần một cấu trúc dữ liệu đơn giản, nhanh chóng và tiết kiệm bộ nhớ. Bạn cũng nên dùng mảng khi bạn làm việc với các kiểu dữ liệu cơ bản hoặc cấu trúc, hoặc khi bạn làm việc với các hàm có tham số là mảng. Hy vọng bạn sẽ hiểu rõ hơn về khi nào dùng vector và khi nào dùng mảng trong C++. Nếu bạn muốn biết thêm chi tiết về vector và mảng trong C++, bạn có thể tham khảo các trang web sau: [Tổng hợp vector trong C++ | TopDev](^1^), [Vector Vs Array: Nên Dùng Gì? - CodeLearn](^2^), [Tìm hiểu về Vector trong C++ - duongdinh24.com](^3^), [Tổng hợp tất cả các hàm vector trong C++ và cách sử dụng](^4^). Hy vọng bạn sẽ tìm được những thông tin hữu ích. Chúc bạn học tập tốt! 😊
+
+Nguồn: Cuộc hội thoại VỚI INTERNET, 11/11/2023
+(1) Tổng hợp vector trong C++ | TopDev Tổng hợp vector trong C++. https://topdev.vn/blog/vector-trong-c/.
+(2) Vector Vs Array: Nên Dùng Gì? - CodeLearn. https://codelearn.io/sharing/vector-vs-array-nen-dung-gi.
+(3) Tìm hiểu về Vector trong C++ - duongdinh24.com. https://duongdinh24.com/vector-trong-c/.
+(4) Tổng hợp tất cả các hàm vector trong C++ và cách sử dụng. https://vietnix.vn/vector-trong-c-plus-plus/.
