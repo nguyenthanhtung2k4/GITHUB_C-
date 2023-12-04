@@ -13,21 +13,21 @@ bool laSoPhongPhu(int num) {
 }
 
 int main() {
-    int n;
-    
-    // Nhập giá trị của n
-    cout << "Nhap so n: ";
-    cin >> n;
+    int so1, so2;
 
-    // Kiểm tra và đếm số lượng số phong phú từ 1 đến n
+    // Nhập giá trị của so1 và so2
+    cout << "Nhap so1 va so2 cach nhau 1 dau cach: ";
+    cin >> so1 >> so2;
+
+    // Kiểm tra và đếm số lượng số phong phú từ so1 đến so2
     int demSoPhongPhu = 0;
-    for (int i = 1; i <= n; ++i) {
+    for (int i = so1; i <= so2; ++i) {
         if (laSoPhongPhu(i)) {
             ++demSoPhongPhu;
         }
     }
 
-    cout << "So luong so phong phu tu 1 den " << n << " la: " << demSoPhongPhu << endl;
+    cout << "So luong so phong phu tu " << so1 << " den " << so2 << " la: " << demSoPhongPhu << endl;
 
     return 0;
 }
