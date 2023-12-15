@@ -34,4 +34,5 @@ int main(){
         }
      }
      file_ghi<<dem;
+   return 0;
 }
