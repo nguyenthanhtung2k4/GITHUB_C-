@@ -97,23 +97,61 @@
 // }
 
 //   ///////////////////////////////////ĐỀ 2
-#include <iostream> 
-using namespace std; 
-int main(){
-     int a;
-     int min,max;
-     for(int i=0;i<3;i++){
-          cin>>a;
-          
-          min=a;
-          max=min;
-          if(a<min){
-               min=a;
+#include <iostream>
+#include <string>
+#include <limits.h>
+using namespace std;
 
-          }else if(a>max){
-               max=a;
-          }
+// int main() {
+     //  cau  1
+     // int mang[3];
+     // int min,max ;
+     // for(int i=0;i<3;i++){
+     //      cin>>mang[i];
+     // }max=min=mang[0];
+     // for(int i=0;i<3;i++){  
+     //      if(mang[i]<min){
+     //           min=mang[i];
+     //      }else if(mang[i]>max){
+     //           max=mang[i];
+     //      }
+     // }cout<<min<<endl<<max<<endl;
+     // return 0;
+//  cau2
+     // int calo=360;
+     // for(int i=5;i<=35;i+=5){
+     //      cout<<"Sau: "<<i<<" phut="<<6*i<<"Calo"<<endl;
+     // }
+// }
+
+struct sanpham
+{
+     string ten_sp;
+     double don_gia;
+     /* data */
+};
+void nhap(sanpham &nhap){
+     cin>>nhap.ten_sp;
+     cout<<"don gia";
+     cin>>nhap.don_gia;
+}
+void nhap_mang(sanpham mang[], int n){
+     for(int i=0;i<n;i++){
+          nhap(mang[i]);
      }
-     cout<<min<<endl;
-     cout<<max; 
+}
+int trung_binh(sanpham mang[],int n){
+     double tong=0;
+     for(int i=0;i<n;i++){
+          tong+=mang[i].don_gia;
+     }double tb=tong/n;
+     return tb;
+}
+int main(){
+     int n;
+     cin>>n;
+     sanpham mang[n];
+     nhap_mang(mang,n);
+     cout<<trung_binh(mang,n);
+
 }
