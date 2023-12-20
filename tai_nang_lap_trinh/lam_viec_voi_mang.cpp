@@ -17,14 +17,14 @@ void sap_xep(int mang[][5] ){
      }
 }
 int main(){
-     int mang[3][5]={5,9,5,5,1,12,12,12,6,6,5,5,5,6,1,};
+     int mang[3][5]={5,9,5,5,1,12,12,12,6,6,5,5,5,4,1,};
 
      sap_xep(mang); 
-     for(int i=0;i<3;i++){
-          for(int j=0;j<5;j++){
-               cout<<mang[i][j]<<" ";
-          }cout<<endl;
-     }
+     // for(int i=0;i<3;i++){
+     //      for(int j=0;j<5;j++){
+     //           cout<<mang[i][j]<<" ";
+     //      }cout<<endl;
+     // }
      for(int i=0;i<3;i++){
           int flas=0;
           int flas2=0;          
