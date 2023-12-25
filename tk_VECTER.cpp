@@ -19,6 +19,10 @@ int main(){
      v1.insert(v1.begin(), 10); // Thêm phần tử 10 vào đầu vector v1
      v2.insert(v2.begin(), "C++"); // Thêm phần tử "C++" vào đầu vector v2
      v3.insert(v3.begin(), 2.71); // Thêm phần tử 2.71 vào đầu vector v3
+     //  xoa phan tu  vector ()
+     int phantuxoa=1;
+     v1.erase(v1.begin()+phantuxoa); 
+     //  dung lenh tren no se xoa phan tu thu 2 trong mang vector_v1
 /// Bước 3: Bước 3: Truy cập phần tử trong vector
      int x = v1[0]; // Lấy giá trị của phần tử đầu tiên của vector v1, gán cho biến x
      string y = v2.at(1); // Lấy giá trị của phần tử thứ hai của vector v2, gán cho biến y
