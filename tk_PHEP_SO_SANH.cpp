@@ -1,3 +1,4 @@
+
 /*Ba màu cơ bản trong một chế độ màu nào đó là red, blue, và yellow. Khi trộn từng cặp 
 2 màu ta sẽ có:
 − red + blue → purple (màu tím)

@@ -8,6 +8,8 @@ bool laChinhPhuong(int n) {
 }
 
 int main() {
+    //  so chinh  phuong la so  can binh phuong len bang so  n 
+    //  vd: 9=3*3 >>  la  so  chinh  phuong
     int a, tong = 0;
     cin >> a;
 
