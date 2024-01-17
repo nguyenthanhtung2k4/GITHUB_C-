@@ -102,7 +102,7 @@ void XuatDS(MATHANG m[], int n){
     }
 }
 MATHANG TimMax(MATHANG m[], int n){
-    MATHANG max = MATHANG[0];
+    MATHANG max = m[0];
     for (int i = 0; i < n; i++){
         if(m[i].SoLuongTon > max.SoLuongTon)
             max = m[i];
