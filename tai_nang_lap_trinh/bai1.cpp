@@ -47,8 +47,49 @@
 //     return 0;
 // }
 
-#include <iostream> 
+// #include <iostream> 
+// using namespace std;
+// int main(){
+//      int a;
+//     cin>>a;
+//     for(int i=1;i<=a;i++){
+//      for(int j=1;j<=i;j++){
+//           cout<<j<<" ";
+//      }cout<<endl;
+//     }
+// }
+
+// #include <iostream> 
+// #include <cctype>
+// #include <algorithm>
+// #include <string>
+// using namespace std;
+// int main(){
+//      string name="thanhtung";
+//      string name_new;
+
+//      // cout<<name.length();
+//      // cout<<tolower(name[2]);
+//      for(int i =0;i<name.length();i++){
+//           name[i]=toupper(name[i]);
+//      }
+//      cout<<name;
+//      return 0;
+// }
+
+#include <iostream>
 using namespace std;
-int main(){
-    
+
+int main() {
+    string str = "TUNG";
+
+    for (int i = 0; i < str.length(); i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] += 'a' - 'A';
+        }
+    }
+
+    cout << str << endl;  // Output: TUNG
+
+    return 0;
 }
