@@ -41,4 +41,26 @@ int main(){
      return 0;
 }
 
+//////////////////////////////////////////////////////
+#include <iostream> 
+using namespace std;
+int main(){
+     int min,max;
+     int so[4];
+     int n=20;
+     min=so[0],max=so[0];
+     for(int i=0; i<n;i++){
+          cin>>so[i];
+     }
+     for(int i=0; i<n;i++){
+          if(so[i]>max){
+               max=so[i];
+          }
+          if(so[i]<min){
+               min=so[i];
+     
+     }
+
+}
+
 */
