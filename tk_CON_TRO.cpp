@@ -1,3 +1,92 @@
+//  VD su dung von tro
+                //  viet ham nhap mang DinhVien gom  n phan tu
+                // Viet ham in mang SinhVien gom  n phan tu
+                #include<iostream>
+                using namespace std;
+                struct SinhVien{
+                    string hoten;
+                    int msv;
+                    int namsinh;
+                };
+                void Nhap(SinhVien *a,int n){
+                    for(int i=0;i<n;i++){
+                        cout<<"Nhap thong tin Sinh Vien: "<<i+1<<endl;
+                        cout<<"Ma Sv: ";
+                        cin>>a[i].msv;
+                        cin.ignore();
+                        cout<<"Ho va Ten:";
+                        getline(cin,a[i].hoten);
+                        cout<<"Nhap nam sinh: ";
+                        cin>>a[i].namsinh;
+                    }
+                }
+                void Xuat(SinhVien *a,int n){
+                    cout<<"\nMa sv\tHo ten\t\tNam Sinh"<<endl;
+                    for(int i =0;i<n;i++){
+                        // cout<<"\nThong tin cua Sinh Vien: "<<i+1<<endl;
+                        cout<<a[i].msv<<"\t"<<a[i].hoten<<"\t\t"<<a[i].namsinh<<endl;
+                    }
+                }
+                int main(){
+                    int n;
+                    cout<<"Nhap so luong sinh vien \n ";cin>>n;
+                    SinhVien *a=new SinhVien [n];
+                    Nhap(a,n);
+                    Xuat(a,n);
+                    return 0;
+                }
+//  VI DU 2
+//////////////////// Co hai cach de du dung in ra con tro
+////////////////////  XEM CACH1 & CACH 2
+                #include<iostream>
+                using namespace std;
+                struct SinhVien{
+                    string hoten;
+                    int msv;
+                    int namsinh;
+                };
+                int main(){
+                    SinhVien Sv;
+                    SinhVien *ptrSv= &Sv;
+                    cout<<"Nhap thong tin sv: "<<endl;
+                    cin.ignore();
+                    cout<<"hoten: ";
+                    getline(cin,Sv.hoten);
+                    cout<<"msv: ";
+                    cin>>Sv.msv;
+                    cout<<"Nam Sinh: ";
+                    cin>>Sv.namsinh;
+                    //  hai  cach in ra bang con tro  khi su dung struct voi  con  tro
+                    // CACH1
+                    cout<<(*ptrSv).hoten<<(*ptrSv).msv<<(*ptrSv).namsinh<<endl;   
+                    //  CACH2
+                    cout<<ptrSv->hoten<<ptrSv->msv<<ptrSv->namsinh<<endl;   
+                }
+// Cấp  phát bộ nhớ
+#include<iostream>
+using namespace std;
+//  dinh nghia 1 kieu  du lieu  ten la SinVien gom 3 truong:  msv ,hoten,namsinhl ;
+struct SinhVien{
+     string hoten;
+     int msv;
+     int namsinh;
+};
+int main(){
+     SinhVien Ds[100]; // khai bao 1 mang ten  Ds 100  phan tu gom kieu  du lieu  SinVien
+     SinhVien *Ds1;// khia bao 1 con tro  Ds sinhVien
+     //cap phat 50 o nho (tao mang 50 phan tu ) kieu SinhVien 
+     Ds1= new SinhVien[50];
+     // su dung Ds1  nhu mot mang
+     Ds1[0].msv=123;
+     Ds1[0].hoten="toi la TUNG";
+     Ds1[0].namsinh=2005;
+     cout<<Ds1[0].msv<<"\t"<<Ds1[0].hoten<<"\t"<<Ds[0].namsinh<<"\t"<<endl;
+     //  giai phong dung luong o  nho
+     delete[] Ds1;
+     //  tiep tuc thuc hien cac cong viec khac.
+     return 0;
+}
+
 //// sử khác biệt khi dùng con trỏ và không dùng con trỏ;
     /// KHI KHONG DÙNG CON TRỎ
 #include <iostream> 
@@ -34,7 +123,7 @@ int main(){
 }
 
 
-/// BÊN DƯỚI LÀ CÁC   CÁCH SỬ DỤNG  CON TRỎ 
+/////////////////////////////// BÊN DƯỚI LÀ CÁC   CÁCH SỬ DỤNG  CON TRỎ 
 
 
 //Con trỏ là một khái niệm quan trọng trong ngôn ngữ lập trình C++. Dưới đây là một số khái niệm và thao tác cơ bản liên quan đến con trỏ:

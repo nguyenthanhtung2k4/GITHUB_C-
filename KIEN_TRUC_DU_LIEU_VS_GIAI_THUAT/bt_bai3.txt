@@ -1,0 +1,8 @@
+bai3
+3.1
+-Độ phức tạp: O(n) 
+==> Vì có 1 lần for lồng nhau.Độ phức tạp của thuật toán tính số pt cao nhất nên .  phần tử cao nhất của thuật toán này là: 0(n)
+3.2
+
+==> O(n^2+n) 
+-Độ phức tạp của thuật toán là : O(2n^2)

@@ -1,0 +1,11 @@
+Bài 2:
+2.1
+tính tổng của tất cả các phần tử trong một mảng nguyên:
+-Độ phức tập: 0(n)
+---> Bởi vì ta  phải duyệt tất cả các phần tử trong mảng và cộng chúng lại. Số lần lặp qua mảng phụ thuộc trực tiếp bào số lượng pt mảng (n) Vì vậy độ phức tạp là O(n).
+2.2 tính phần tử lớn nhất của mảng
+-Độ phức tạp : O(n)
+----> Bởi vì ta  phải duyệt tất cả các phần tử trong mảng và cộng chúng lại. Số lần lặp qua mảng phụ thuộc trực tiếp bào số lượng pt mảng (n) Vì vậy độ phức tạp là O(n).
+2.3 Kiểm tra xem một số nguyên có phải là số nguyên tố hay không.
+-Độ phức tạp: 0(sqrt(n))
+--->Bởi vì Trong thuật toán kiểm tra số nguyên tố, ta cần kiểm tra số nguhyeen tố tới căn bậc2 số đó (sqrt(n) thay vì kiểm tra tới n.Vì thế độ phức tạp của thuật toán là : O(sqrt(n)).
