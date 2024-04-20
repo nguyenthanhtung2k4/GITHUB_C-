@@ -1,1 +1,30 @@
+de quy: là hàm gọi lại hàm cũ nhưng trên bài toans nhỏ hơn:
+          vd: 
+               function dequy(n){
+                    if(n==0)return=1;
+                    return n*returnt(n-1);
+               }
+     ==> de quy la dung lai no va hoat don
 thuật toán quay lui
+
+
+
+Dữ liệu triều tuong:
+     -adt,abstrucst  data type: loai du lieu
+     gồm 2  phần:
+          + khai báo 
+          + thao thác.
+
+
+- Danh sách liên kết là: 
+     + Cho phép thêm bớt các dữ liệu
+     + Cho phép truy vấn các dữ liêu (Nhưng hơi châm do phải lấy dữ liệu từ đầu đến n cần tìm)
+     + Cho phép lưu mỗi ô lưu trữ là một kiệu dữ liệu khác nhau.
+     ==> Việc dùng Danh sách liên kết có thể làm giảm bớt  ô nhớ khi k dùng, có thêm ô nhớ khi cần thiết.
+     * Để dùng được  Danh Sách liên kết bạn cần phải có:
+               + KHởi tạo Struct
+               + Khởi tạo một hàm int(dữ liệu phù hợp): để khởi danh sách liên kết
+               + Khởi tạo hàm kiểm tra danh sách có trống
+               + Kiểm tra độ dài của liên kết
+               + ....  tham khảo: tk_DanhsachLienket.cpp
+-
