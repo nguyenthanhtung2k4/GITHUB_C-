@@ -8,7 +8,7 @@ struct Sinhvien
 	float heso;
 	float tienluong;
 };
-typedef Sinhvien Item; // ding nghia kieu  du lieu sinh vien
+typedef Sinhvien Item; // ding nghia kieu  du lieu NhanVien
 struct Node
 {
 	Item Data;
@@ -184,8 +184,8 @@ void Menu(List&L)
 			{
 				Item x;
 				// nhap thong tin sv
-				cout<<"Nhap thong tin sinh vien:\n";
-				cout<<"Ma sinh vien: ";
+				cout<<"Nhap thong tin NhanVien:\n";
+				cout<<"Ma NhanVien: ";
 				cin>>x.manv;
 				cin.ignore();
 				cout<<"Nhap ho ten: ";
@@ -201,8 +201,8 @@ void Menu(List&L)
 				Item x;
 				int k;
 				// nhap thong tin sv
-				cout<<"Nhap thong tin sinh vien:\n";
-				cout<<"Ma sinh vien: ";
+				cout<<"Nhap thong tin NhanVien:\n";
+				cout<<"Ma NhanVien: ";
 				cin>>x.manv;
 				cin.ignore();
 				cout<<"Nhap ho ten: ";
