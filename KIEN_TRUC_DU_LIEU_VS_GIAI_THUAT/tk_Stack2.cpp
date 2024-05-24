@@ -71,7 +71,7 @@ void inStack(Stack L)
 {    cout<<"MaNv\tHoTen\theso\tLuong"<<endl;
 	while (L.top != NULL)
 	{
-		cout << L.top->Data.manv << "\t" << L.top->Data.hoten << "\t" << L.top->Data.heso<<L.top->Data.tienluong<< endl;
+		cout << L.top->Data.manv << "\t" << L.top->Data.hoten << "\t" << L.top->Data.heso<<"\t"<<L.top->Data.tienluong<< endl;
 		L.top = L.top->Next;
 	}
 }
@@ -156,7 +156,7 @@ void SaveStack(Stack S){
 		cout<<"Khong mo duoc tep";
           return;
 	}
-	file<<"Ma\tHoTen\theso\tluong\n";
+	// file<<"Ma\tHoTen\theso\tluong\n";
 	while (S.top!=NULL)
 	{
 		Data=Pop(S);
@@ -176,10 +176,13 @@ void ReadFileStack(Stack &S){
 	while (!file.eof())
 	{
 		file>>Data.manv;
-		file>>Data.hoten;
+		file.ignore();
+		getline(file,Data.hoten);
 		file>>Data.heso;
 		file>>Data.tienluong;
-		push(S,Data);
+		if(!file.eof()){
+			push(S,Data);
+		}
 	}
 	file.close();
 	

@@ -132,16 +132,17 @@ Item Oldest(Stack S){
 int Search(Stack S,int tim){
 	Item Data;
 	int dem=0;
-	if(!isEmpty(S)){
+	if(isEmpty(S)){
 		return -1;
-	}
-	while (S.top!=NULL)
-	{
-		dem++;
-		if(S.top->Data.msv==tim){
-			return dem;
+	}else{
+		while (S.top!=NULL)
+		{
+			dem++;
+			if(S.top->Data.msv==tim){
+				return dem;
+			}
+			S.top=S.top->Next;
 		}
-		S.top=S.top->Next;
 	}
 	return -1;
 }
