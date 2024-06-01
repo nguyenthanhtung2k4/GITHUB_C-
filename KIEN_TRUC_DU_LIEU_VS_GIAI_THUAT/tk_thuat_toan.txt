@@ -27,4 +27,22 @@ Dữ liệu triều tuong:
                + Khởi tạo hàm kiểm tra danh sách có trống
                + Kiểm tra độ dài của liên kết
                + ....  tham khảo: tk_DanhsachLienket.cpp
--
+     --> Danh sách liên kết có 2 loại 1 là đơn 2 là kép(đôi)
+
+- Ngăn Xếp ( Stack) Last in Frit Out ->Vào sau  ra trước
+
+- Hàng đợi (Queue) frit in firt in   -> vào trước ra trước
+     Font : Là Đầu lấy ra
+     Rear : Là phần vào.
+     tham khảo: tk_Queue.cpp
+- Cây nhị phân:
+               Bậc của nút là số cây con
+               Nút gôcs là k có cha
+               nút lá là nút  bậc babngwf 0
+
+
+               Độ fauf đui\\\
+
+     ==>  DDacjw biết :  Cây có số bậc con lớn nhất là 2 và  nhỏ nhất là0
+     - Nút bé hơn thì nằm bên trái;
+     - NÚt lớn hơn thì nằm bên phải;

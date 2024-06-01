@@ -1,3 +1,0 @@
-void Pop(Queue&Q){
-     
-// }
