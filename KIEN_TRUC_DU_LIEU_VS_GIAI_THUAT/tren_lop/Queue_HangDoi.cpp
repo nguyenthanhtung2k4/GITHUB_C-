@@ -169,7 +169,7 @@ void ReadFileStack(Queue &Q){
 		file>>Data.manv;
 		file>>Data.hoten;
 		file>>Data.heso;
-		file>>Data.luong;
+		file>>Data.luong;	
 		Push(Q,Data);
 	}
 	file.close();
