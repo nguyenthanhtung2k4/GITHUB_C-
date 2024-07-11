@@ -106,7 +106,7 @@ void WriteToFile(ofstream &file,Tree T){
 void WriteFileDSSP(Tree T){
 	// fstream file("Sp.txt",ios::out); /// au  tao  tao  ra file  de chua no.
 	ofstream file;
-	file.open("Sp.txt");
+	file.open("SanPham.txt");
 	if(!file){
 		cout<<"File khong ton tai! ";
 	}else{

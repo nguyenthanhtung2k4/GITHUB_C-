@@ -10,7 +10,7 @@ void InMang(int arr[],int n){
 	cout<<endl;
 }
 void InsertionSort(int arr[],int n){
-	int i,key,j;// i la chi  so arr ; key  la tim ohan tu; j la vi tri can chen;
+	int i,key,j;// i la chi  so arr ; key  la tim phan tu; j la vi tri can chen;
 	for(i=1;i<n;i++){
 		key=arr[i];
 		j=i-1;

@@ -1,0 +1,36 @@
+* TK_Sắp_Xếp
+     ==> Tất cả các trường hợp bên dưới đều được sắp xếp tăng dần.
+
+
+- Insertion-Sort (Chèn sắp xếp)
+     + Lấy vị trí thứ i= (i1)
+     + So sánh  với vị trí thứ nhất i=0 (i0)
+          // Nếu i0>i1 ==>  i1= vitri 0 &&  i0=vitri 1
+          // Nếu i0!> i1 ==>  giữ nguyên vị trí 
+          // các vị trí khác cũng lần lượt so sánh như vậy 
+
+
+- Selection-Sort( Lựa chọn sắp xếp)
+     + Chạy  từ vị trí đầu i=0(i0 -> Đầu)
+     + Chạy đến vị trí cuối i=n(in -> Cuối)
+          // Sau khi  chạy đến vị trí cuối(in) thì so sánh
+          // Nếu in< i0 ==> Đổi chỗ cho  nhau.
+                    // Viết hàm hoán đổi vị trí đầu thành cuối, cuối thành đầu!
+                         //     int temp = xp;
+                         //     xp = yp;
+                         //     yp = temp;
+          // Nếu in!< i0 ==> Thì không đổi chỗ cho nhau.
+
+- Doubble-Sort( Sắp xếp Nổi bột)
+     + So sánh i=0(i0 -> đầu) và i=1(i1 ->  thứ2)
+          // Nếu i0>i1 ==> đổi chỗ cho nha.
+               // Viết hàm hoán đổi vị trí đầu thành cuối, cuối thành đầu!
+                         //     int temp = xp;
+                         //     xp = yp;
+                         //     yp = temp;
+          // Nếu i0!>i1 thì giữ nguyên vị trí đó.
+          // Cứ lặp n phần tử đến hết (Cứ lặp đi lặp lại như cho đến hết n)
+
+- Merge-Sort ( Sắp xếp Trộn)
+     +  Phân chia nhỏ ra rôi sắp xếp 
+     
